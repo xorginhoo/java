@@ -59,3 +59,17 @@ public class Main {
 
     }
 }
+
+public class Main {
+    public static void main(String[] args) {
+
+        float n1 = 10;
+        float n2 = 5;
+        float n3 = 8;
+
+        float total1 = (n1 + n2 + n3) / 3;
+
+        System.out.printf("média:\n %.1f ", total1);
+
+    }
+}
