@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner teclado = new Scanner (System.in);
+	    int numnotas = 4;
+	    double somanotas = 0;
+	    
+	for (int i=1;i<=numnotas;i++){
+	    System.out.println("digite a nota:"+i);
+	    double nota = teclado.nextDouble();
+	    somanotas+=nota;
+	}
+	double media=somanotas/numnotas;
+	
+	 System.out.println(String.format("Media do aluno: %.2f", media));
+   
+  if(media >= 7) {
+     System.out.println("Aluno aprovado"); 
+  } else if (media >= 4) {
+      System.out.println("Aluno reprovado com direito a recuperação"); 
+  } else{ 
+      System.out.println("Aluno reprovado sem direito a recuperação"); 
+  }	
+	}
+}
